@@ -1,0 +1,57 @@
+//Problema 01
+
+ // Rectángulo tiene un ángulo recto (igual a 90°)
+Obtusángulo tiene un ángulo obtuso (mayor que 90° pero menor 180°)
+Acutángulo los tres ángulos son agudos (menor que 90°) 
+Elaborar un algoritmo que permita leer el tamaño de los tres ángulos (A,B,C) de un 
+triángulo e imprima qué tipo es.
+
+
+------------------------------------------------------------------------------------------ALGORITMO----------------------------------------------------------------------------------------- 
+1. Inicio
+2. Se pide el valor del ánguloB
+3. Se pide el valor del ánguloC
+4. Se pide el valor del ánguloA
+5. Se verifica, si alguno de los valores ingresados en los ángulos es igual a 90, si es
+	verdadero entonces es un triangulo tipo rectangulo
+6. de lo contrario, si alguno de los valores ingresados en los ángulos es mayor a 90, 
+	y menor a 180 entonces es un triangulo tipo obtusangulo
+7. de lo contrario, si alguno de los valores ingresados en los ángulos es menor a 90, 
+	entonces es un triangulo tipo acutangulo
+8. Se muestra en pantalla el tipo de triangulo a que pertenece
+9. Fin
+
+
+-------------------------------------------------------------------------------------- MINIESPECIFICACION ---------------------------------------------------------------------------------------
+
+1. Inicio
+
+2. anguloB, i[0, n]
+3. anguloC, i[0, n]
+4. anguloA, i[0, n]
+5. tipoTriangulo, x(50) [{a-z}, {A-Z}, {BS}]
+
+6.  <<"Ingrese el valor del angulo A"
+7.  >> anguloA
+8.  <<"Ingrese el valor del angulo B"
+9.  >> anguloB
+10. << Ingrese el valor del angulo C"
+11. >> anguloC  
+
+12. SI (anguloA == 90 || anguloB == 90 || anguloC == 90) entonces
+13. tipoTriangulo <-- "rectangulo"
+
+14. De lo contrario 
+15. Si (((anguloA > (90)) && (anguloA <= (180)))
+	|| ((anguloB > (90)) && (anguloB <= (180)))
+        || ((anguloC > (90)) && (anguloC <= (180))))  entonces
+16.  tipoTriangulo <--  "obtusangulo";
+
+17. De lo contrario 
+18. Si (anguloA < 90 || anguloB < 90 || anguloC < 90)
+      tipoTriangulo <--  "Acutangulo"
+
+19. Fin_si
+
+20. << "el triangulo es tipo" + tipoTriangulo
+21. Fin

@@ -1,0 +1,25 @@
+//Problema 09
+
+//Utilizando una estructura repetitiva diseñe un algoritmo para calcular e imprimir
+los primeros términos de la serie:
+
+S1 = 12−11+24−22+36−33+48−44
+
+------------------------------------------------------------------------- MINIESPECIFICACION---------------------------------------------------------------------
+
+1. Inicio
+
+2. limite, i[0,n] <-- 44
+3. val_1, i[0,n] <-- 12
+4. val_2, i[0,n] <-- 11
+
+5. Haga
+
+6. << "+" + val1 + "-" + val2
+
+7. val1 <-- val1 + 12
+8. val2 <-- val2 + 1
+
+9. Fin Haga Hasta (val2 <= limite)
+
+10. Fin

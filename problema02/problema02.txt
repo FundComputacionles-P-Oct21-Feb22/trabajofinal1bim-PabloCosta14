@@ -1,0 +1,93 @@
+// Problema 02
+// En un almacén de venta de trajes, si se compra uno se hace el 20% de descuento, si se
+compran 2, el 25%, si se compran 3, el 40%, y si compra más de 3, el 50%. Elaborar un 
+algoritmo que lea la cantidad de trajes y el precio unitario (todos tienen el mismo 
+precio) e imprima el subtotal por pagar, el descuento y el total por pagar.
+
+---------------------------------------------------------------------------------------- ALGORITMO ----------------------------------------------------------------------------------- 
+1. Inicio
+2. Se pide ingresar la cantidad de trajes
+3. Se pide ingresar el valor o precio unitario de los trajes
+
+4. Se multiplica la cantidad de trajes por el precio unitario de los trajes para obtener 
+	el subtotal
+5. Se verifica, Si la cantidad de trajes es igual a 1, de ser este el caso el descuento 
+	de los trajes es igual a 20 * subtotal / 100
+6. El valor total seria el subtotal - el descuento obtenido
+7. el descuento es igual a 20
+8. de lo contrario, si la cantidad de trajes es igual a 2, entonces el descuento de los 
+	trajes es igual a 25 * subtotal / 100
+9. El valor total seria el subtotal - el descuento obtenido 
+10. el descuento es igual a 25
+11. de lo contrario, si la cantidad de trajes es igual a 3, entonces el descuento de los 
+	trajes es igual a 40 * subtotal / 100
+12. El valor total seria el subtotal - el descuento obtenido
+13. el descuento es igual a 40
+14. de lo contrario, si la cantidad de trajes es mayor a 3, entonces el descuento de los 
+	trajes es igual a 50 * subtotal / 100 
+15. el descuento es igual a 50
+
+16. Se muestra en pantalla el subtotal
+17. Se muestra en pantalla el total a pagar
+18. Se muestra en pantalla el descuento aplicado
+19. Fin
+
+
+------------------------------------------------------------------------------------- MINIESPECIFICACION -----------------------------------------------------------------------------
+
+1. Inicio
+
+2. porcentaje1, d[0,n] <-- 20
+3. porcentaje2, d[0,n] <-- 25
+4. porcentaje3, d[0,n] <-- 40
+5. porcentaje4, d[0,n] <-- 50
+
+6. descuento1, d[0,n]
+7. descuento2, d[0,n]
+8. descuento3, d[0,n]
+9. descuento4, d[0,n]
+
+10. descuento, d[0,n]
+11. precio_trajes, d[0,n]
+12. cantidad_trajes, d[0,n]
+
+13. valor_total, d[0,n]
+14. subtotal, d[0,n] 
+
+15. << "Ingrese la cantidad de trajes"
+16. >> cantidad_trajes
+
+17. << "Ingrese el precio de los trajes"
+18. >> precio_trajes
+
+19. subtotal <-- precio_trajes * cantidad_trajes
+
+20. Si (cantidad_trajes == 1) Entonces
+21.          descuento1 <-- (porcentaje1 * subtotal) / 100
+22.          valor_total <-- subtotal - descuento1
+23.          descuento <-- porcentaje1
+
+24. De lo contrario 
+25. Si (cantidad_trajes == 2) entonces
+26.           descuento2 <-- (porcentaje2 * subtotal) / 100
+27.           valor_total <-- subtotal - descuento2
+28.           descuento <-- porcentaje2
+
+29. De lo contrario
+30. Si (cantidad_trajes == 3) entonces
+31.            descuento3 <-- (subtotal * porcentaje3) / 100
+32.            valor_total <-- subtotal - descuento3
+33.            descuento <-- porcentaje3
+
+34. De lo contrario 
+35.            descuento4 <-- subtotal * porcentaje4 / 100
+36.            valor_total <-- subtotal - descuento4
+37.            descuento <-- porcentaje4
+
+38. Fin_si   
+
+39. << "el subtotal que debe pagar es" + subtotal
+40. << "el descuento es" + descuento
+41. << "el valor total a pagar es" + valor_total
+
+42. Fin

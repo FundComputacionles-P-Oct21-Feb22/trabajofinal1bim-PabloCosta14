@@ -1,0 +1,70 @@
+//Problema10
+// Realice un algoritmo que lea un número de datos y 
+calcule la media y la varianza de los mismos. 
+El usuario decide cuando no ingresar más números.
+------------------------------------------------------------------------------ALGORITMO----------------------------------------------------------------------------------- 
+1. Inicio
+2. Se declaran las variables en este caso el contador es igual a 0, la entrada de datos es igual
+	a 0, el numero empieza con 0, la media es 0, el contador1 es 0, la bandera que nos sirve
+	para salir del condicional es verdadera, el dato es igual a 0 y el numero a comparar es
+	igual a 0.
+3. empezamos generando un ciclo (en este caso Mientras)
+4. Pedimos que el usuario ingrese los valores, y cada que ingrese un valor el contador aumenta
+	en 1.
+5. Abrimos un condicional, si el dato que ingreso es diferente al numero a comparar, el contador1
+	aumenta en 1, de lo contrario el contador1 no aumenta
+6. cada numero que ingrese se va sumando
+e si, (la bandera se hace falsa) salimos del proceso
+8. Sacamos la dividiendo los datos sumados para el contador de la cantidad de numero que ingreso
+9. Se presenta en pantalla la media
+10. Se presenta en pantalla el contador que equivale a la cantidad de datos que ingreso
+8. Fin
+
+
+------------------------------------------------------------------------MINIESPECIFICACION-----------------------------------------------------------------------------------------
+1.Inicio
+
+2.contador d[0,n] <-- 0
+3.entrada_datos d[0,n] <-- 0 
+
+4.numero i[0,n] <-- 0
+5.salida,x(10)[{a-z}]
+6.media d[0,n] <-- 0
+
+7.variedad d[0,n] <-- 0
+8.contador1 d[0,n] <-- 0
+
+9. bandera,boolean <-- true
+10.dato, d[0,n] <-- 0
+11.numero_comparacion ,d[0,n] 
+
+12. Mientras
+13.    (bandera) //true
+
+14. << "Ingrese los datos requeridos"
+15. >> entrada_datos
+
+16.    contador = contador + 1
+
+17. Si (entrada_datos != numero_comparacion) entonces
+18.     contador1 = contador +1
+
+19.  De lo contrario
+20.     contador1 = contador1 + 0
+
+21. Fin si
+
+22. dato = dato + entrada_datos
+23. << "Ingrese si para salir del proceso"
+
+24. Si (salida == "si")
+25.     bandera = false
+26. Fin si
+
+27. Fin_Mientras
+
+28. media = dato/contador
+
+30. << "La media es" + media
+31. << "La variedad de datos es" + contador
+32. Fin

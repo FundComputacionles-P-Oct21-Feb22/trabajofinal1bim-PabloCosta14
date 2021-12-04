@@ -1,0 +1,40 @@
+//Problema 07
+
+//Elaborar un algoritmo que permita leer un número par y calcule e imprima la suma de los
+números pares del 2 hasta el número leído. Si el número leído es menor a 2 debe imprimir
+un mensaje de error.
+
+--------------------------------------------------------------------------------------MINIESPECIFICACION --------------------------------------------------------------------------------
+
+1. Inicio
+
+2. numero, i[0,n]
+3. contador, i[0,n] <-- 2
+4. val1, i[0,n] <-- 2
+5. val2, i[0,n]<-- 0
+6. total, i[0,n]<-- 0
+7. cadena, i[0,n]<-- 0
+
+
+8. << "Ingrese el numero par"
+9. >> numero
+
+10. Si (numero > 2 && numero MOD 2 == 0) Entonces
+11.         << "la suma de los numeros pares hasta el numero ingresado es"
+
+12. Mientras (contador <= numero)
+13.  	contador = contador + 2
+14.        val2= val2 + 1
+15.        total = val1 * val2
+16.        cadena = total + cadena
+
+17. Fin_Mientras
+ 
+18. << cadena
+
+19. De lo contrario
+20. << "Numero ingresado erroneo"
+
+21. Fin_si   
+
+22. Fin
